@@ -4,7 +4,7 @@ const textToEncode = document.getElementById('textToEncode');
 const textEncoded = document.getElementById('textEncoded');
 const resultContainer = document.getElementById('result')
 const h3 = document.querySelector('h3');
-const p = document.querySelector('p');
+const p = document.getElementById('p-result');
 const copyBtn = document.getElementById('copiar');
 
 const encode = (str) => {
