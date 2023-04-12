@@ -75,9 +75,18 @@ nav{
     background-color: #0A3871;
     color: #fff;
 }
+.encode:hover{
+    background-color: #356EA9;
+    color: #fff;
+}
 
 .btn-container > .decode{
     background-color: #D8DFE8;
+    color: #0A3871
+    ;
+}
+.decode:hover{
+    background-color: #ADB5BD;
     color: #0A3871;
 }
 .warning{
@@ -116,9 +125,9 @@ nav{
     color: #fff;
     cursor: pointer;
 }
-
-.copied{
-    color: #0A3871;
+.copy:hover{
+    background-color: #609ED4;
+    color: #fff;
 }
 
 
@@ -167,8 +176,13 @@ nav{
     font-size: 1.1rem;
     justify-content: center;
     align-items: center;
+    color: #343A40;
 }
 
+a{
+    text-decoration: none;
+    color: #343A40;
+}
 
 
 
