@@ -1,0 +1,151 @@
+:root{
+    --font-color: #0A3871;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-height: 100vh ;
+}
+nav{
+    padding: 1.5rem;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.encode-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 70vh;
+    margin: 4rem 2rem;
+}
+.text-container{
+    flex: 1;
+}
+.text-container > textarea{
+    width: 80%;
+    height:200px;
+    margin: 0 auto;
+    resize: none;
+    border: none;
+    color: var(--font-color);
+    font-size: 2.5rem;
+    padding: 0 1.2rem;
+}
+.text-container > textarea::placeholder{
+    font-size: 2.5rem;
+    color: var(--font-color);
+}
+
+
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.btn-container > button{
+    padding: 20px;
+    border: none;
+    width: 45%;
+    border-radius: 24px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-container > .encode{
+    background-color: #0A3871;
+    color: #fff;
+}
+
+.btn-container > .decode{
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+.warning{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 1rem;
+    color: #495057;
+    font-size: 1rem;
+}
+.warning span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #495057;
+    color: #fff;
+    font-size: 12px;
+    margin-right: .6rem;
+    text-align: center;
+    line-height: 1;
+  }
+
+.copy{
+    display: flex;
+    border: none;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 24px;
+    width: 85%;
+    background-color: #0A3871;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    height: 70vh;
+    margin: 4rem 2rem;
+    border-radius: 24px;
+    padding: 2rem;
+    background: no-repeat center/contain url(/assets/img/Muñeco.svg);
+    box-shadow: 0px 11px 15px 8px rgba(0,0,0,0.1);
+}
+
+.textEncoded{
+    display: none;
+    width: 90%;
+    resize: none;
+    border: none;
+    font-size: 1.5rem;
+
+}
+.result h3 {
+    text-align: center;
+    margin: 1.3rem auto;
+}
+.result p {
+    text-align: center;
+    margin-bottom: 3rem;
+}
