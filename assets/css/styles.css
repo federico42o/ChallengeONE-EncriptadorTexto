@@ -117,6 +117,10 @@ nav{
     cursor: pointer;
 }
 
+.copied{
+    color: #0A3871;
+}
+
 
 
 .result{

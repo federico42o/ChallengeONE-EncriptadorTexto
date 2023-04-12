@@ -50,13 +50,8 @@ decodeBtn.addEventListener('click',()=>{
 
 
 const copyToClipboard = () => {
-    originalButtonText = copyBtn.textContent;
     const text = textEncoded.value;
     navigator.clipboard.writeText(text);
-    copyBtn.textContent = 'Copiado!';
-    setTimeout(() => {
-        copyBtn.textContent = originalButtonText;
-    }, 2000);
 
 };
 
