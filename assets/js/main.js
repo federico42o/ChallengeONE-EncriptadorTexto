@@ -36,7 +36,6 @@ const showText = (str) => {
 encodeBtn.addEventListener('click',()=>{
 
     const textEncoded = encode(textToEncode.value);
-    encodeBtn.value = "Codificado!"
     showText(textEncoded);
 
 })

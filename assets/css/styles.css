@@ -153,3 +153,50 @@ nav{
     text-align: center;
     margin-bottom: 3rem;
 }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1028px) {
+    .encode-container{
+        width: 100%;
+    }
+    .text-container > textarea{
+        margin:auto;
+        width: 90%;
+        font-size: 1.8rem;
+    }
+    .btn-container{
+        gap: 1rem;
+    }
+    .btn-container > button{
+        padding: 10px;
+        width: 35%;
+        border-radius: 14px;
+        font-size: .9rem;
+    }
+    .text-container > textarea::placeholder{
+        font-size: 1.8rem;
+    }
+    .result {
+        width: 100%;
+        background-size: 300px;
+    }
+}
