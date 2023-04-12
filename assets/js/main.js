@@ -52,7 +52,7 @@ const copyToClipboard = async () => {
     try {
         const text = textEncoded.value;
         await navigator.clipboard.writeText(text);
-        btnCopy.innerHTML = 'Copiado!';
+        copyBtn.innerHTML = 'Copiado!';
     } catch (err) {
         console.log(err);
         alert('No se pudo copiar el texto. Intente nuevamente');
