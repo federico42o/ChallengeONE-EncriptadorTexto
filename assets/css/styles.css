@@ -140,6 +140,7 @@ nav{
 .textEncoded{
     display: none;
     width: 90%;
+    height: 30%;
     resize: none;
     border: none;
     font-size: 1.5rem;
