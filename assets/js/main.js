@@ -36,6 +36,7 @@ const showText = (str) => {
 encodeBtn.addEventListener('click',()=>{
 
     const textEncoded = encode(textToEncode.value);
+    encodeBtn.value = "Codificado!"
     showText(textEncoded);
 
 })
@@ -48,15 +49,15 @@ decodeBtn.addEventListener('click',()=>{
 
 
 
-const copyToClipboard = async () => {
-    try {
-        const text = textEncoded.value;
-        await navigator.clipboard.writeText(text);
-        copyBtn.innerHTML = 'Copiado!';
-    } catch (err) {
-        console.log(err);
-        alert('No se pudo copiar el texto. Intente nuevamente');
-    }
+const copyToClipboard = () => {
+    originalButtonText = copyBtn.textContent;
+    const text = textEncoded.value;
+    navigator.clipboard.writeText(text);
+    copyBtn.textContent = 'Copiado!';
+    setTimeout(() => {
+        copyBtn.textContent = originalButtonText;
+    }, 2000);
+
 };
 
 copyBtn.addEventListener('click', copyToClipboard);
