@@ -1,4 +1,4 @@
 ## Demo:
 ![demo][def]
 
-[def]: ./assets/img/rec-screen.gif
+[def]: ./assets/img/rec-tab.gif
