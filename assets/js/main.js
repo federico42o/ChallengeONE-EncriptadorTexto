@@ -23,6 +23,11 @@ const decode = (str) => {
         .replace(/ufat/g, 'u');
     };
 
+textToEncode.addEventListener('input', () => {
+    let input = textToEncode.value.toLowerCase().replace(/[^a-z]/g, '');
+    textToEncode.value = input;
+    });
+
 const showText = (str) => {
     resultContainer.style.backgroundImage = 'none';
     resultContainer.style.justifyContent = 'space-between';
